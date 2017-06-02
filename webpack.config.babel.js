@@ -2,7 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 
 module.exports = {
-  entry: './index.js',
+  entry: './src/Presentation.jsx',
   output: {
     path: path.join(__dirname, '/docs'),
     filename: 'bundle.js',
@@ -21,6 +21,11 @@ module.exports = {
       {
         test: /\.s?css$/,
         loader: 'style-loader!css-loader!sass-loader!import-glob-loader',
+      },
+      {
+        test: /\.jsx?$/,
+        loader: 'raw-loader',
+        include: /src\/code/,
       },
     ],
   },
