@@ -6,12 +6,10 @@
 
 .fade-enter {
   opacity: 0.01;
-  filter: blur(50px);
 }
 
 .fade-enter.fade-enter-active {
   opacity: 1;
-  filter: blur(0px);
   transition: all 500ms ease-in;
 }
 
@@ -22,6 +20,6 @@
 
 .fade-leave.fade-leave-active {
   opacity: 0.01;
-  filter: blur(50px);
-  transition: all 300ms ease-in;
+  filter: blur(100px);
+  transition: all 700ms ease-in;
 }

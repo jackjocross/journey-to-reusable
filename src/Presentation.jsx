@@ -3,7 +3,7 @@
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import { Heading, Slide, Text, List, ListItem, CodePane } from 'spectacle';
+import { Heading, Slide, Text, List, ListItem, CodePane, Image } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
 import Deck from './Deck';
@@ -42,6 +42,21 @@ render(
       </Heading>
     </Slide>
     <Slide bgColor="primary">
+      <Image width="100%" src="https://www.thurrott.com/wp-content/uploads/2015/06/setup-wiz.jpg" />
+    </Slide>
+    <Slide bgColor="primary">
+      <Image
+        width="100%"
+        src="https://support.apple.com/library/content/dam/edam/applecare/images/en_US/osx/wifi_working_correct.png"
+      />
+    </Slide>
+    <Slide bgColor="primary">
+      <Image width="100%" src={require('./assets/payment.png')} />
+    </Slide>
+    <Slide bgColor="primary">
+      <Image width="100%" src={require('./assets/dispute.png')} />
+    </Slide>
+    <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         Declarative
       </Heading>
@@ -50,13 +65,13 @@ render(
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         What Was Out There
       </Heading>
-      <CodePane lang="jsx" source={require('./code/WhatWasOutThere')} margin="20px" fit />
+      <CodePane lang="jsx" source={require('./assets/WhatWasOutThere')} margin="20px" fit />
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         We Have a Declarative Wizard!
       </Heading>
-      <CodePane lang="jsx" source={require('./code/DeclarativeWizard')} margin="20px" fit />
+      <CodePane lang="jsx" source={require('./assets/DeclarativeWizard')} margin="20px" fit />
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -70,6 +85,7 @@ render(
       <List>
         <ListItem>How can we make this adaptable to Amex use cases?</ListItem>
         <ListItem>How can we make this adaptable to non-Amex use cases?</ListItem>
+        <ListItem>Develop against your API</ListItem>
       </List>
     </Slide>
     <Slide bgColor="primary">
@@ -95,7 +111,7 @@ render(
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         We Were Doing Too Much
       </Heading>
-      <CodePane lang="jsx" source={require('./code/DoingTooMuch')} margin="20px" fit />
+      <CodePane lang="jsx" source={require('./assets/DoingTooMuch')} margin="20px" fit />
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -113,9 +129,9 @@ render(
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         What We Have Today
       </Heading>
-      <CodePane lang="jsx" source={require('./code/WhatWeHaveToday')} margin="20px" fit />
+      <CodePane lang="jsx" source={require('./assets/WhatWeHaveToday')} margin="20px" fit />
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
         Keyboard Navigation Demo
       </Heading>
@@ -123,7 +139,7 @@ render(
         src="https://codesandbox.io/embed/ERDnK3j8K"
         style={{
           width: '100%',
-          height: '500px',
+          height: '70vh',
           border: 0,
           borderRadius: '4px',
           overflow: 'hidden',
@@ -131,7 +147,7 @@ render(
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
         Progress Bar Demo
       </Heading>
@@ -139,7 +155,7 @@ render(
         src="https://codesandbox.io/embed/zKWgwj0vm"
         style={{
           width: '100%',
-          height: '500px',
+          height: '70vh',
           border: 0,
           borderRadius: '4px',
           overflow: 'hidden',
@@ -147,7 +163,7 @@ render(
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
         Modal Demo
       </Heading>
@@ -155,7 +171,7 @@ render(
         src="https://codesandbox.io/embed/new"
         style={{
           width: '100%',
-          height: '500px',
+          height: '70vh',
           border: 0,
           borderRadius: '4px',
           overflow: 'hidden',

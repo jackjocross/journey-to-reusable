@@ -23,9 +23,14 @@ module.exports = {
         loader: 'style-loader!css-loader!sass-loader!import-glob-loader',
       },
       {
+        test: /\.(jpg|png|svg)$/,
+        loader: 'file-loader',
+        include: /src\/assets/,
+      },
+      {
         test: /\.jsx?$/,
         loader: 'raw-loader',
-        include: /src\/code/,
+        include: /src\/assets/,
       },
     ],
   },
