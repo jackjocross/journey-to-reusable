@@ -5,5 +5,5 @@ const steps = [
 ];
 
 return (
-  <Wizard steps={steps} optionA={true} optionB={[1]} optionC={() => true} />
+  <Wizard steps={steps} showNavigation={true} showProgress={true} />
 );

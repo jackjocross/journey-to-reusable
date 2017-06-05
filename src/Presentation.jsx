@@ -33,12 +33,18 @@ render(
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        Problem Statement
+        Journey explanation
       </Heading>
-      <List>
-        <ListItem>Many multi-step UX flows on our site</ListItem>
-        <ListItem>Abstract out common logic and patterns</ListItem>
-      </List>
+    </Slide>
+    <Slide bgColor="primary">
+      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        What is a Wizard?
+      </Heading>
+    </Slide>
+    <Slide bgColor="primary">
+      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        Declarative
+      </Heading>
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -48,33 +54,28 @@ render(
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        Declarative Vs. Imperative
-      </Heading>
-      <List>
-        <ListItem>Imperative: code telling the computer how to do something step by step</ListItem>
-        <ListItem>Declarative: code describing what you want the end result to be</ListItem>
-      </List>
-    </Slide>
-    <Slide bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         We Have a Declarative Wizard!
       </Heading>
       <CodePane lang="jsx" source={require('./code/DeclarativeWizard')} margin="20px" fit />
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        Flexibile
+      </Heading>
+    </Slide>
+    <Slide bgColor="primary">
+      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         What About Flexibility?
       </Heading>
       <List>
-        <ListItem>How can we make this adaptable to all of Amex's use cases?</ListItem>
-        <ListItem>How can we make this adaptable to use cases outside of Amex?</ListItem>
+        <ListItem>How can we make this adaptable to Amex use cases?</ListItem>
+        <ListItem>How can we make this adaptable to non-Amex use cases?</ListItem>
       </List>
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        We Were Doing Too Much
+        Inverted
       </Heading>
-      <CodePane lang="jsx" source={require('./code/DoingTooMuch')} margin="20px" fit />
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -84,6 +85,17 @@ render(
         <ListItem>Take advantage of what the framework already provides</ListItem>
         <ListItem>Allow an escape hatch with render callbacks</ListItem>
       </List>
+    </Slide>
+    <Slide bgColor="primary">
+      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        Scoped
+      </Heading>
+    </Slide>
+    <Slide bgColor="primary">
+      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+        We Were Doing Too Much
+      </Heading>
+      <CodePane lang="jsx" source={require('./code/DoingTooMuch')} margin="20px" fit />
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -103,20 +115,53 @@ render(
       </Heading>
       <CodePane lang="jsx" source={require('./code/WhatWeHaveToday')} margin="20px" fit />
     </Slide>
-    <Slide bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+    <Slide bgColor="secondary">
+      <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
+        Keyboard Navigation Demo
+      </Heading>
+      <iframe
+        src="https://codesandbox.io/embed/ERDnK3j8K"
+        style={{
+          width: '100%',
+          height: '500px',
+          border: 0,
+          borderRadius: '4px',
+          overflow: 'hidden',
+        }}
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+      />
+    </Slide>
+    <Slide bgColor="secondary">
+      <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
         Progress Bar Demo
       </Heading>
+      <iframe
+        src="https://codesandbox.io/embed/zKWgwj0vm"
+        style={{
+          width: '100%',
+          height: '500px',
+          border: 0,
+          borderRadius: '4px',
+          overflow: 'hidden',
+        }}
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+      />
     </Slide>
-    <Slide bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
+    <Slide bgColor="secondary">
+      <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
         Modal Demo
       </Heading>
-    </Slide>
-    <Slide bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        Keyboard Input Demo
-      </Heading>
+      <iframe
+        src="https://codesandbox.io/embed/new"
+        style={{
+          width: '100%',
+          height: '500px',
+          border: 0,
+          borderRadius: '4px',
+          overflow: 'hidden',
+        }}
+        sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
+      />
     </Slide>
   </Deck>,
   document.getElementById('root'),
