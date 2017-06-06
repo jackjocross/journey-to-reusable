@@ -6,7 +6,11 @@ import { render } from 'react-dom';
 import { Heading, Slide, Text, List, ListItem, CodePane, Image } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
+import Progress from './Progress';
 import Deck from './Deck';
+
+const checkpoints = [1, 7, 10, 12, 14, 18];
+const checkpointTitles = ['???', 'Declarative', 'Flexible', 'Inverted', 'Scoped', '< />'];
 
 const theme = createTheme(
   {
@@ -32,9 +36,9 @@ render(
       </Text>
     </Slide>
     <Slide bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        Journey explanation
-      </Heading>
+      <Text>
+        <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
+      </Text>
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -60,6 +64,9 @@ render(
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         Declarative
       </Heading>
+      <Text>
+        <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
+      </Text>
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -77,6 +84,9 @@ render(
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         Flexibile
       </Heading>
+      <Text>
+        <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
+      </Text>
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -92,6 +102,9 @@ render(
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         Inverted
       </Heading>
+      <Text>
+        <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
+      </Text>
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -106,6 +119,9 @@ render(
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
         Scoped
       </Heading>
+      <Text>
+        <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
+      </Text>
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -130,6 +146,11 @@ render(
         What We Have Today
       </Heading>
       <CodePane lang="jsx" source={require('./assets/WhatWeHaveToday')} margin="20px" fit />
+    </Slide>
+    <Slide bgColor="primary">
+      <Text>
+        <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
+      </Text>
     </Slide>
     <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={1} fit caps lineHeight={1} textColor="tertiary">
