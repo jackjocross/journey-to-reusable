@@ -68,15 +68,15 @@ render(
         <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
       </Text>
     </Slide>
-    <Slide bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        What Was Out There
+    <Slide bgColor="secondary">
+      <Heading size={4} lineHeight={2} textColor="tertiary">
+        Imperative Wizards
       </Heading>
       <CodePane lang="jsx" source={require('./assets/WhatWasOutThere')} margin="20px" fit />
     </Slide>
-    <Slide bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        We Have a Declarative Wizard!
+    <Slide bgColor="secondary">
+      <Heading size={4} lineHeight={2} textColor="tertiary">
+        Declarative Wizard
       </Heading>
       <CodePane lang="jsx" source={require('./assets/DeclarativeWizard')} margin="20px" fit />
     </Slide>
