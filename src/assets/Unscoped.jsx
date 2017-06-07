@@ -1,5 +1,5 @@
 return (
-  <Wizard>
+  <Wizard routed>
     <Steps>
       <Step path="gandalf">
         <Gandalf />
