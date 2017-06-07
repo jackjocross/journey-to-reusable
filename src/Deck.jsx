@@ -8,6 +8,7 @@ import { Wizard, Steps, Step, Navigation } from 'react-albus';
 
 import KeyboardNavigation from './KeyboardNavigation';
 import './transitions.scss';
+import './CodeMirror.scss';
 
 export default class Deck extends Component {
   static propTypes = {

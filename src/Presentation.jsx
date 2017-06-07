@@ -25,6 +25,10 @@ const theme = createTheme(
   },
 ).screen;
 
+// eew
+theme.components.codePane.code.fontSize = '1.5rem';
+theme.components.codePane.pre.maxWidth = '80vw';
+
 render(
   <Deck theme={theme}>
     <Slide bgColor="primary">
@@ -38,10 +42,13 @@ render(
         src="https://ghbtns.com/github-btn.html?user=americanexpress&repo=react-albus&type=star&count=true&size=large"
         frameBorder="0"
         scrolling="0"
-        width="160px"
+        width="120px"
         height="30px"
         style={{ marginTop: '25px' }}
       />
+      <div>
+        <Image src={require('./assets/amex.png')} margin="20px" width="300px" />
+      </div>
     </Slide>
     <Slide bgColor="primary">
       <Text>
@@ -63,10 +70,10 @@ render(
       />
     </Slide>
     <Slide bgColor="primary">
-      <Image width="100%" src={require('./assets/payment.png')} />
+      <Image width="100%" src={require('./assets/ocr.jpg')} />
     </Slide>
     <Slide bgColor="primary">
-      <Image width="100%" src={require('./assets/dispute.png')} />
+      <Image width="100%" src={require('./assets/address.png')} />
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
@@ -76,13 +83,13 @@ render(
         <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
       </Text>
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Imperative Wizard
       </Heading>
       <CodePane lang="jsx" source={require('./assets/ImperativeWizard')} margin="20px" fit />
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Declarative Wizard
       </Heading>
@@ -96,13 +103,13 @@ render(
         <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
       </Text>
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Configurable Wizard
       </Heading>
       <CodePane lang="jsx" source={require('./assets/ConfigurableWizard')} margin="20px" fit />
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Composable Wizard
       </Heading>
@@ -116,13 +123,13 @@ render(
         <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
       </Text>
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Library Has Control
       </Heading>
       <CodePane lang="jsx" source={require('./assets/LibraryControl')} margin="20px" fit />
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Developer Has Control
       </Heading>
@@ -136,13 +143,13 @@ render(
         <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
       </Text>
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Doing Too Much
       </Heading>
       <CodePane lang="jsx" source={require('./assets/Unscoped')} margin="20px" fit />
     </Slide>
-    <Slide bgColor="secondary">
+    <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Solving a Specific Problem
       </Heading>
@@ -156,7 +163,7 @@ render(
         <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
       </Text>
     </Slide>
-    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
+    <Slide bgColor="primary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Start Simple
       </Heading>
@@ -172,7 +179,7 @@ render(
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
-    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
+    <Slide bgColor="primary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Add Keyboard Navigation
       </Heading>
@@ -188,7 +195,7 @@ render(
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
-    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
+    <Slide bgColor="primary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Add a Progress Bar
       </Heading>
@@ -204,7 +211,7 @@ render(
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
-    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
+    <Slide bgColor="primary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Add a Confirmation Screen
       </Heading>
@@ -217,6 +224,7 @@ render(
           borderRadius: '4px',
           overflow: 'hidden',
         }}
+        className="CodeMirror-inverted"
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
