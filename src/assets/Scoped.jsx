@@ -1,5 +1,5 @@
 return (
-  <Wizard>
+  <Wizard history={createBrowserHistory()}>
     <Steps>
       <Step path="gandalf">
         <Gandalf />

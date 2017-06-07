@@ -1,5 +1,8 @@
 return (
-  <Wizard>
+  <Wizard
+    showNavigation={true}
+    showProgress={true}
+  >
     <Steps>
       <Step path="gandalf">
         <Gandalf />
