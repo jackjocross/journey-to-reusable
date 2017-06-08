@@ -3,7 +3,7 @@
 import 'babel-polyfill';
 import React from 'react';
 import { render } from 'react-dom';
-import { Heading, Slide, Text, CodePane, Image } from 'spectacle';
+import { Heading, Slide, Text, CodePane, Image, Link } from 'spectacle';
 import createTheme from 'spectacle/lib/themes/default';
 
 import Progress from './Progress';
@@ -232,9 +232,15 @@ render(
       />
     </Slide>
     <Slide bgColor="primary">
-      <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        Questions
+      <Heading size={3}>
+        Questions?
       </Heading>
+      <Text>
+        <Link href="https://twitter.com/forcetheissue" textColor="tertiary">@ForceTheIssue</Link>
+      </Text>
+      <Text>
+        <Link href="https://twitter.com/jayjaycross" textColor="tertiary">@jayjaycross</Link>
+      </Text>
       <Image width="30%" src={require('./assets/qr.png')} />
     </Slide>
   </Deck>,
