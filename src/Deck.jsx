@@ -44,11 +44,11 @@ export default class Deck extends Component {
       <HashRouter>
         <Route
           path="/"
-          render={({ history, match: { url } }) => (
+          render={({ history, match: { url } }) =>
             <Wizard
               basename={url}
               history={history}
-              render={({ step }) => (
+              render={({ step }) =>
                 <div>
                   <ReactCSSTransitionGroup
                     transitionName="fade"
@@ -56,18 +56,16 @@ export default class Deck extends Component {
                     transitionLeaveTimeout={500}
                   >
                     <Steps key={step.path} step={step}>
-                      {React.Children.map(this.props.children, (child, index) => (
-                        <Step path={`${index}`} className="fade-step">{child}</Step>
-                      ))}
+                      {React.Children.map(this.props.children, (child, index) =>
+                        <Step path={`${index}`} className="fade-step">{child}</Step>,
+                      )}
                     </Steps>
                   </ReactCSSTransitionGroup>
                   <Navigation>
                     <KeyboardNavigation />
                   </Navigation>
-                </div>
-              )}
-            />
-          )}
+                </div>}
+            />}
         />
       </HashRouter>
     );

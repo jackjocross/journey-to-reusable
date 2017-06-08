@@ -57,8 +57,11 @@ render(
     </Slide>
     <Slide bgColor="primary">
       <Heading size={1} fit caps lineHeight={1} textColor="secondary">
-        What is a Wizard?
+        What are we building?
       </Heading>
+      <Text>
+        <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
+      </Text>
     </Slide>
     <Slide bgColor="primary">
       <Image width="100%" src="https://www.thurrott.com/wp-content/uploads/2015/06/setup-wiz.jpg" />
@@ -85,13 +88,13 @@ render(
     </Slide>
     <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
-        Imperative Wizard
+        Imperative
       </Heading>
       <CodePane lang="jsx" source={require('./assets/ImperativeWizard')} margin="20px" fit />
     </Slide>
     <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
-        Declarative Wizard
+        Declarative
       </Heading>
       <CodePane lang="jsx" source={require('./assets/DeclarativeWizard')} margin="20px" fit />
     </Slide>
@@ -105,13 +108,13 @@ render(
     </Slide>
     <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
-        Configurable Wizard
+        Configurable
       </Heading>
       <CodePane lang="jsx" source={require('./assets/ConfigurableWizard')} margin="20px" fit />
     </Slide>
     <Slide bgColor="primary" maxHeight="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
-        Composable Wizard
+        Composable
       </Heading>
       <CodePane lang="jsx" source={require('./assets/ComposableWizard')} margin="20px" fit />
     </Slide>
@@ -163,12 +166,12 @@ render(
         <Progress checkpoints={checkpoints} checkpointTitles={checkpointTitles} />
       </Text>
     </Slide>
-    <Slide bgColor="primary" maxHeight="100vw" maxWidth="100vw">
+    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Start Simple
       </Heading>
       <iframe
-        src="https://codesandbox.io/embed/ERDnK3j8K"
+        src="https://codesandbox.io/embed/lwWyXOj"
         style={{
           width: '100%',
           height: '70vh',
@@ -179,12 +182,12 @@ render(
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
-    <Slide bgColor="primary" maxHeight="100vw" maxWidth="100vw">
+    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Add Keyboard Navigation
       </Heading>
       <iframe
-        src="https://codesandbox.io/embed/ERDnK3j8K"
+        src="https://codesandbox.io/embed/D99PVGm4B"
         style={{
           width: '100%',
           height: '70vh',
@@ -195,12 +198,12 @@ render(
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
-    <Slide bgColor="primary" maxHeight="100vw" maxWidth="100vw">
+    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Add a Progress Bar
       </Heading>
       <iframe
-        src="https://codesandbox.io/embed/zKWgwj0vm"
+        src="https://codesandbox.io/embed/59Ym08vrv"
         style={{
           width: '100%',
           height: '70vh',
@@ -211,12 +214,12 @@ render(
         sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"
       />
     </Slide>
-    <Slide bgColor="primary" maxHeight="100vw" maxWidth="100vw">
+    <Slide bgColor="secondary" maxHeight="100vw" maxWidth="100vw">
       <Heading size={4} lineHeight={2} textColor="tertiary">
         Add a Confirmation Screen
       </Heading>
       <iframe
-        src="https://codesandbox.io/embed/new"
+        src="https://codesandbox.io/embed/jqQE7p7Jy"
         style={{
           width: '100%',
           height: '70vh',
